@@ -1,0 +1,279 @@
+body {
+    background-image: url('./../img/main_bg.png');
+    background-repeat: no-repeat;
+}
+
+header {
+    background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );
+    border-bottom: 1px solid black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+}
+
+.side {
+    display: flex;
+    border-left: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.side>li {
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 1.5rem 0;
+    margin: 0 1.5rem;
+}
+
+nav > div > h1 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    padding-left: 1rem;
+
+}
+
+main {
+    padding: 6rem 10rem;
+    position: relative;
+    padding-bottom: 10rem ;
+}
+
+main > div {
+    width:30%;
+    background-color: #ECFD94;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+main > div:first-child > h2 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0
+}
+
+.select > article {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.select > article > h3  {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 1rem 0
+}
+
+.budget {
+    position: relative;
+}
+
+.budget p {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3rem;
+    position:absolute;
+    left: 12rem;
+    bottom: 0.4rem
+}
+
+
+input[type=text], input[type=number] {
+    width: 100%;
+    border: none;
+    background:none;
+    border-bottom: 2px solid black;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    -webkit-text-stroke: 1px black; /* width and color */
+}
+
+input[type=number] {
+    position:relative;
+    width: 40%;
+}
+::placeholder {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 1px black; /* width and color */
+    
+}
+
+
+*:focus {
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.objectif {
+    padding-top: 2rem
+}
+
+.objectif .box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.objectif > h2 {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem
+}
+
+.objectif > p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.objectif article {
+    background-image: url('./../img/analytics.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 192px;
+    height: 212px;
+    border: 3px solid white;
+    opacity: 0.5;
+    transition: 0.5s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+    position:relative;   
+}
+
+.objectif article i{
+    font-size: 1.5rem;
+    position:absolute;
+    top:30%
+}
+
+
+.objectif article:first-child {
+    margin-left: 0;
+}
+
+.objectif article:hover {
+    border: 3px solid black;
+    opacity: 1;
+    transition: 0.5s
+}
+
+.objectif a:focus {
+    border: 3px solid black;
+    opacity: 1;
+}
+
+
+.objectif article h2 {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #ECFD94;
+    /* background-color: #231d19; */
+    background-image: url('./../img/scratch.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1rem 3rem;
+    margin-left: .5rem;
+}
+
+.objectif article:nth-child(2) {
+    background-image: url('./../img/visibility.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+ .objectif article:nth-child(3) {
+    background-image: url('./../img/other.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+.objectif article:nth-child(2) h2 {
+   padding: 1rem 3.5rem;
+   margin-right: .5rem;
+}
+
+.objectif article:nth-child(3) h2 {
+    padding: 1rem 4.5rem;
+    margin-right: .5rem;
+ }
+
+ .btn {
+	background-color:#9462FF;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:1rem 2rem;
+	text-decoration:none;
+    box-shadow: 0px 0.6295871734619141px 1.8887615203857422px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1.2591743469238281px 0.6295871734619141px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0.6295871734619141px 0.6295871734619141px 0px rgba(0, 0, 0, 0.14);
+    transition: 1s;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+ }
+
+.btn:hover {
+    background-color:none;
+    background: linear-gradient(90deg, #E0AE51 -1.91%, #DB8F5C 16.89%, #D15990 39.03%, #BA4CBD 55.96%, #8542D2 77.73%, #5633DA 102.78%),
+    linear-gradient(0deg, #272E38, #272E38);
+    transition: 1s
+}
+
+footer p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}

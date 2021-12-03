@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/back.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <p>&#128150</p>
+                <h1>Campagne Hetic</h1>
+                <p><span>Budget total : </span>2500€</p>
+            </div>
+           
+            <ul class="side">
+                <li>Mes campagnes</li>
+                <li>Mon compte</li>
+            </ul>
+        </nav>    
+    </header>
+    <main>
+        <section class="nav">
+            <ul>
+                <li><a href="">Influenceurs</a></li>
+                <li><a href="">Suivi des vidéos</a></li>
+                <li><a href="">Analyse & rapports</a></li>
+                <li><a href="">Paramètres</a></li>
+            </ul>
+        </section>
+
+        <section class="report">
+            <article>
+                <h2>Influenceurs</h2>
+                <a class ="btn" href="">Ajouter un influenceur</a>
+                <p>+</p>
+            </article>
+            <p>Statistiques sur les influenceurs de la campagne</p>
+            <article>
+                <div>
+                    <h3>Budget dépensé</h3>
+                    <p>500€</p>
+                    <p>Sur 2500€</p>
+                </div>
+                <div>
+                    <h3>Chiffre d'affaire des ventes</h3>
+                    <p>1023€</p>
+                    <p>Sur cette campagne</p>
+                </div>
+                <div class="divide">
+                    <h3>Vidéos postées</h3>
+                    <p>1 sur 4</p>
+                    <p>Prévues</p>
+                </div>
+                <div>
+                    <h3>Impressions</h3>
+                    <p>12 232</p>
+                </div>
+                <div>
+                    <h3>Taux d'engagement</h3>
+                    <p>3.9%</p>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <h2>Liste des influenceurs</h2>
+                    <input type="search" placeholder="Rechercher">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="first_head">Nom du compte</th>
+                            <th>Vidéos</th>
+                            <th>Budget</th>
+                            <th>Impressions</th>
+                            <th>Te post</th>
+                            <th>Te moyen</th>
+                            <th>CPE</th>
+                            <th>EVM</th>
+                            <th>Clics lien</th>
+                            <th>Ventes</th>
+                            <th>Ca ventes</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="glaclasse">
+                                <img src="./assets/img/analytics.jpg" alt="">
+                                <div>
+                                    <h3>FoodTours</h3>
+                                    <p>@Hum_Miam</p>
+                                </div>
+                            </div></td>
+                            <td>1 sur <span class='purple'>2</span></td>
+                            <td class='purple'>1000€</td>
+                            <td>60 324</td>
+                            <td>3,9%</td>
+                            <td>4,2%</td>
+                            <td>0.43€</td>
+                            <td>9.8K</td>
+                            <td>201</td>
+                            <td>102</td>
+                            <td>1023€</td>
+                            <td>&#128065;</td>
+                        </tr>
+                        <tr>
+                            <td><div class="glaclasse">
+                                <img src="./assets/img/sun.png" alt="">
+                                <div>
+                                    <h3>Kuisine</h3>
+                                    <p>@Kuisine</p>
+                                </div>
+                            </div></td>
+                            <td>0 sur <span class='purple'>2</span></td>
+                            <td class='purple'>1500€</td>
+                            <td class='invit' colspan="5"><a href="">@Kuisine pour accéder aux statistiques</a></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0€</td>
+                            <td>&#128065;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+    </main>
+</body>
+</html>

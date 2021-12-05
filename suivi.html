@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/suivi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <p>&#128150</p>
+                <h1>Campagne Hetic</h1>
+                <p><span>Budget total : </span>2500€</p>
+            </div>
+           
+            <ul class="side">
+                <li>Mes campagnes</li>
+                <li>Mon compte</li>
+            </ul>
+        </nav>    
+    </header>
+    <main>
+        <section class="nav">
+            <ul>
+                <li><a href="/back-office.html">Influenceurs</a></li>
+                <li><a id="active" href="/suivi.html">Suivi des vidéos</a></li>
+                <li><a href="/rapport.html">Analyse & rapports</a></li>
+                <li><a href="">Paramètres</a></li>
+            </ul>
+        </section>
+
+        <section class="report">
+            <article class="subtitle">
+                <h2>Vidéos approuvées</h2>
+                <a class="btn" href="#add_video"><span>+</span>Ajouter une vidéo</a>
+            </article>
+            <p><span id="active">2 vidéos</span> dans cette campagne</p>
+
+            <article>
+                <div class="video">
+                    <img src="./assets/img/video1.png" alt="">
+                        <div class="profile">
+                            <img src="./assets/img/sun.png" alt="">
+                            <div>
+                                <h3>STREET FOOD japoonais, Paris</h3>
+                                <p>@FoodTours</p>
+                                <p>.</p>
+                                <p>il y a 24 jours</p>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div>
+                                <p>60 324 impressions</p>
+                                <p>50 K de vues</p>
+                            </div>
+                            <div>
+                                <p>20 K de vues de la sponso</p>
+                                <p>201 clics lien</p>
+                            </div>
+                            <div>
+                                <p>3,9% TE</p>
+                                <p>0,43€ CPE</p>
+                            </div>
+                            <div>
+                                <p>2K likes</p>
+                                <p>0,5K dislikes</p>
+                                <p>432 commentaires</p>
+                            </div>
+                            <ul>
+                                <li class="timer">15:20</li>
+                                <li class="sponso_time">2:34 min de sponso</li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="video">
+                    <img src="./assets/img/video2.png" alt="">
+                        <div class="profile">
+                            <img src="./assets/img/other.jpg" alt="">
+                            <div>
+                                <h3>Recette de tempura croustillant</h3>
+                                <p>@Kuisine</p>
+                                <p>.</p>
+                                <p>il y a 32 jours</p>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div>
+                                <p>134 324 impressions</p>
+                                <p>120 K de vues</p>
+                            </div>
+                            <div>
+                                <p>60 K de vues de la sponso</p>
+                                <p>523 clics lien</p>
+                            </div>
+                            <div>
+                                <p>2,7% TE</p>
+                                <p>0,67€ CPE</p>
+                            </div>
+                            <div>
+                                <p>4,5K likes</p>
+                                <p>4K dislikes</p>
+                                <p>768 commentaires</p>
+                            </div>
+                            <ul>
+                                <li class="timer">06:35</li>
+                                <li class="sponso_time">0:30 min de sponso</li>
+                            </ul>
+                        </div>
+                </div>
+            </article>
+
+            <article class="subtitle">
+                <h2>Vidéos à approuver</h2>
+                <p><span id="active" class="fake_text" >1 vidéo en attente</span> d'approbation</p>
+            </article>
+
+            <article class="info">
+                <h3><span id='active'>Approuvez les vidéos ou faites un commentaire</span> à vos influenceurs </h3>
+                <p>X</p>
+            </article>
+
+            <div class="video" id="fake">
+                <img src="./assets/img/video3.png" alt="">
+                    <div class="profile">
+                        <img src="./assets/img/sun.png" alt="">
+                        <div>
+                            <h3>STREET FOOD Brésilien, Rio</h3>
+                            <p>@FoodTours</p>
+                            <p>.</p>
+                            <p>il y a 2 jours</p>
+                        </div>
+                    </div>
+                    <div class="approvment">
+                        <div>
+                           <a href=""><img src="./assets/img/yes.png" alt=""></a>
+                           <h3>Approuver</h3>
+                        </div>
+                        <div>
+                            <a href="#delete_modal"><img src="./assets/img/no.png" alt=""></a>
+                            <h3>Refuser & commenter</h3>
+                         </div>
+                        <ul>
+                            <li class="timer">13:37</li>
+                            <li class="sponso_time">1:41 min de sponso</li>
+                        </ul>
+                        <p>New</p>
+                    </div>
+            </div>
+        </section>
+
+        <div id="delete_modal" class="modal">
+            <div class="modal__content">
+                <h1><span id="active">REFUS:</span> STREET FOOD Brésilien, Rio</h1>
+                <textarea placeholder ="Ajouter un commentaire" name="" id="" cols="30" rows="10" ></textarea>
+                <a class="btn-modal" onclick="delete_element()" href="#">Confirmer le refus</a>
+                <a href="#" class="modal__close">&times;</a>
+            </div>
+        </div>
+
+        <div id="add_video" class="modal">
+            <div class="modal__content">
+                <h1><span id="active">REFUS:</span> STREET FOOD Brésilien, Rio</h1>
+                <textarea placeholder ="Ajouter un commentaire" name="" id="" cols="30" rows="10" ></textarea>
+                <a class="btn-modal" onclick="delete_element()" href="#">Confirmer le refus</a>
+                <a href="#" class="modal__close">&times;</a>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+<script>
+    const video = document.getElementById('fake');
+    const text = document.getElementsByClassName('fake_text');
+
+    function delete_element () {
+        video.remove();
+        text[0].innerHTML = "0 vidéo en attente";
+    }
+
+</script>
+</html>

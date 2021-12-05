@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/rapport.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <p>&#128150</p>
+                <h1>Campagne Hetic</h1>
+                <p><span>Budget total : </span>2500€</p>
+            </div>
+           
+            <ul class="side">
+                <li>Mes campagnes</li>
+                <li>Mon compte</li>
+            </ul>
+        </nav>    
+    </header>
+    <main>
+        <section class="nav">
+            <ul>
+                <li><a href="/back-office.html">Influenceurs</a></li>
+                <li><a href="/suivi.html">Suivi des vidéos</a></li>
+                <li><a id="active" href="">Analyse & rapports</a></li>
+                <li><a href="">Paramètres</a></li>
+            </ul>
+        </section>
+
+        <section class="report">
+            <article class="subtitle">
+                <h2>Performances</h2>
+                <div>
+                    <a class="btn" href="#">Créer un rapport</a>
+                    <i class="fa fa-question-circle"></i>
+                    <p>Tutoriel</p>
+                </div>
+            </article>
+            <p>Liste des posts des influenceurs de la campagne</p>
+
+            <article class="filtres">
+                <div>
+                    <p>Tous les influenceurs</p>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <div>
+                    <i class="fa fa-calendar"></i>
+                    <p>24 sept. 2021 - 24 oct. 2021</p>
+                </div>
+            </article>
+
+            <article class='data' id="data_insert">
+                <div>
+                    <h3>Impressions</h3>
+                    <div>
+                        <p>60 324</p>
+                        <p>➚ +3,8%</p>
+                    </div>
+                    <img src="./assets/img/Graph.png" alt="">
+                </div>
+                <div>
+                    <h3>Vues</h3>
+                    <div>
+                        <p>50 000</p>
+                        <p>➚ +4,1%</p>
+                    </div>
+                    <img src="./assets/img/Graph.png" alt="">
+                </div>
+                <div>
+                    <h3>Taux d'engagement</h3>
+                    <div>
+                        <p>3,9%</p>
+                        <p>➚ +1,2%</p>
+                    </div>
+                    <img src="./assets/img/Graph.png" alt="">
+                </div>
+                <div id="except">
+                    <h3>CPE</h3>
+                    <div>
+                        <p>0,43€</p>
+                    </div>
+                    <img src="./assets/img/Graph.png" alt="">
+                </div>
+                <div>
+                    <h3>Clics sur un lien</h3>
+                    <div>
+                        <p>201</p>
+                        <p>➚ +3,8%</p>
+                    </div>
+                    <img src="./assets/img/Graph.png" alt="">
+                </div>
+                <a href="#kpi_add"><div id="add_kpi">
+                    <i class="fa fa-plus-circle"></i>
+                    <p>Ajouter un KPI</p>
+                </div></a>
+            </article>
+
+            <article class="graph">
+                <div>
+                    <h3>Engagement</h3>
+                    <p>Cumulatif par jour</p>
+                </div>
+                <img src="./assets/img/graph_perfo.png" alt="">
+            </article>
+
+            <h2 class="title">Performances par influenceur</h2>
+
+            <article>
+                <div class="top">
+                    <div class='glaclasse'>
+                        <img src="./assets/img/sun.png" alt="">
+                            <div>
+                                <h3>FoodTours</h3>
+                                <p>@Hum_Miam</p>
+                            </div>
+                    </div>
+                    <ul>
+                        <li>1 vidéo</li>
+                        <li>2103 impressions</li>
+                        <li>3,3% TE</li>
+                        <li>34% de clics liens </li>
+                    </ul>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+            </article>
+            <article class="middle">
+                <img src="./assets/img/video1.png" alt="">
+                <div>
+                    <h3>STREET FOOD japonais, Paris</h3>
+                        <ul>
+                            <li id="bold">3.9% CTR</li>
+                            <li>60 324 impressions</li>
+                            <li>50 K de vues</li>
+                        </ul>
+                        <ul>
+                            <li id="bold">3.9% TE</li>
+                            <li>2K likes <span>.</span> 0,5K dislikes</li>
+                            <li>432 commentaires</li>
+                        </ul>
+                        <ul>
+                            <li id="bold">201 clics lien</li>
+                            <li>Durée moyenne de visionnage <em>5:33</em></li>
+                            <li>Pourcentage vus <em>33%</em></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Rétention d'audience</h3>
+                        <img src="./assets/img/retention.png" alt="">
+                    </div>
+            </article>
+            <article>
+                <div class="bot">
+                    <div class='glaclasse'>
+                        <img src="./assets/img/other.jpg" alt="">
+                            <div>
+                                <h3>Kuisine</h3>
+                                <p>@Kuisine</p>
+                            </div>
+                    </div>
+                    <ul>
+                        <li>0 vidéo</li>
+                        <li>0 impression</li>
+                        <li>0% TE</li>
+                        <li>0% de clics liens </li>
+                    </ul>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+            </article>
+            <h2 class="title">Performances</h2>
+            <p class="oui">EMV, ROI, reporting en temps réel sur les vidéos</p>
+            <article class="perfo">
+                <div class="informations">
+                    <div>
+                        <h3>Vidéos postées</h3>
+                        <h4>1 sur 4</h4>
+                        <p>prévues</p>
+                    </div>
+                    <div>
+                        <h3>Budget dépensé</h3>
+                        <h4>500€</h4>
+                        <p>sur 2500€</p>
+                    </div>
+                    <div>
+                        <h3>Chiffre d'affaire des ventes</h3>
+                        <h4>1023€</h4>
+                        <p>sur cette campagne</p>
+                    </div>
+                    <div>
+                        <h3>Ventes cumulées</h3>
+                        <h4>102</h4>
+                        <p>ventes</p>
+                    </div>
+                    <div>
+                        <h3>CA ventes</h3>
+                        <h4>1023€</h4>
+                        <p id="invisible">ventes</p>
+                    </div>
+                    <div>
+                        <h3>EMV</h3>
+                        <h4>9.8K</h4>
+                        <p id="invisible">ventes</p>
+                    </div>
+                    <div>
+                        <h3>ROI</h3>
+                        <h4>XX€</h4>
+                        <p id="invisible">ventes</p>
+                    </div>
+                </div>
+
+                <div class="ventes">
+                    <h3>Nombre de ventes <i class="fa fa-question-circle"></i></h3>
+                    <div>
+                        <i class="fa fa-calendar"></i>
+                        <p>24 sept. 2021 - 24 oct. 2021</p>
+                    </div>
+                </div>
+
+                <img src="./assets/img/perfo.png" alt="">
+
+            </article>
+
+            
+
+
+            
+        </section>
+        <div id="kpi_add" class="modal">
+            <div class="modal__content">
+                <h1>Ajouter un KPI</h1>
+                <form action="">
+                    <label for="kpi">KPI:</label>
+                    <select id="kpi" name="kpi">
+                      <option value="like">Nombre de like</option>
+                      <option value="dislike">Nombre de dislike</option>
+                    </select>
+                    <a class="btn-modal" href="#" onclick="add_kpi()">Ajouter KPI</a>
+                  </form>
+                <a href="#" class="modal__close">&times;</a>
+            </div>
+        </div>
+    </main>
+    
+</body>
+
+
+
+<script>
+    const before = document.getElementById('data_insert')
+    const element = '<div><h3>Nombre de likes</h3> <div> <p>2412</p><p>➚ +,12%</p></div><img src="./assets/img/Graph.png" alt=""></div>'
+    new_element.innerHTML = element
+    function add_kpi() {
+        before.insertAdjacentHTML('afterbegin', element);
+    }
+</script>
+</html>

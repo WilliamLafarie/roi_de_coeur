@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Création campagne</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,15 +49,15 @@
             <h2>Objectif de la campagne</h2>
             <p>Définir un objectif permet de personnaliser votre tableau de bord.</p>
             <div class="box">
-                <a href='#target2' id='target2'><article>
+                <article tabindex="0" id="focus">
                     <i>📊</i>
                     <h2>Conversion</h2>
-                </article></a>
-                <article>
+                </article>
+                <article tabindex="0" id="focus">
                     <i>👀</i>
                     <h2>Visibilité</h2>
                 </article>
-                <article>
+                <article tabindex="1" id="focus">
                     <i>⭐</i>
                     <h2>Autres</h2>
                 </article>
@@ -70,4 +70,10 @@
         <p>Ces informations seront modifiables à tout moment.</p>
     </footer>
 </body>
+
+<script>
+    document.getElementById('focus').onclick = function () {
+    document.getElementById('focus').focus();
+};
+</script>
 </html>

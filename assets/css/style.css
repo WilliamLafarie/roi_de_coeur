@@ -185,7 +185,8 @@ input[type=number] {
     display:flex;
     justify-content: center;
     align-items: center;
-    position:relative;   
+    position:relative; 
+    cursor: pointer;  
 }
 
 .objectif article i{
@@ -199,7 +200,7 @@ input[type=number] {
     margin-left: 0;
 }
 
-.objectif article:hover {
+.objectif article:hover, .objectif article:focus {
     border: 3px solid black;
     opacity: 1;
     transition: 0.5s
